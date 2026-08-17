@@ -1,0 +1,91 @@
+:root {
+  --bg: #2f3e46;
+  --secondarybg: #354f52;
+  --highlight: #52796f;
+  --largetext: #84a98c;
+  --text: #cad2c5;
+}
+
+body {
+  background-color: var(--bg);
+  margin: 0;
+  padding: 15px;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+h1,
+h2 {
+  color: var(--largetext);
+}
+
+p {
+  color: var(--text);
+}
+
+.title {
+  text-align: center;
+}
+
+.textbox {
+  background-color: var(--secondarybg);
+  border: 2px solid var(--highlight);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--highlight);
+  color: var(--text);
+  padding: 10px 24px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #00000000;
+  border: 2px solid var(--highlight);
+}
+
+@media (orientation: landscape) {
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .title {
+    grid-column: 1/-1;
+  }
+}
+
+i[class^="devicon-"] {
+  font-size: 45px;
+  margin-right: 15px;
+}
+.githubbutton {
+    background-color: #010409;
+    color: #F0F6FC
+;
+    border: 2px solid #010409;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.github-btn:hover {
+  background-color: #00000000;
+  border: 2px solid #cad2c5;
+  color: #cad2c5;
+}
+
+.githubbutton i[class^="devicon-"] {
+    font-size: 16px;
+    margin-right: 0;
+}
